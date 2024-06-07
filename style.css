@@ -1,6 +1,12 @@
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(47, 2, 56, 0.918)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(35, 2, 43, 0.918)),
             url("assets/fonfo.jpg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.letra-color {
+    background: linear-gradient(to right, rgb(255, 1, 162),rgb(32, 140, 255)); 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
