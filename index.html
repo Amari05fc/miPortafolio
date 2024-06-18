@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-black text-white">
+    <nav class="navbar fixed-top navbar-expand-lg bg-black text-white">
       <div class="container">
         <a class="navbar-brand text-white" href="#">Fernanda</a>
         <button
@@ -45,16 +45,16 @@
               >
             </li>
             <li class="nav-item">
-              <a class="text-white nav-link" href="Habilidades">Habilidades</a>
+              <a class="text-white nav-link" href="#habilidades">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a class="text-white nav-link" href="Proyectos">Proyectos</a>
+              <a class="text-white nav-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="text-white nav-link" href="#">Testimonios</a>
+              <a class="text-white nav-link" href="#testimonios">Testimonios</a>
             </li>
             <li class="nav-item">
-              <a class="text-white nav-link" href="#">Contacto</a>
+              <a class="text-white nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -64,8 +64,7 @@
     <header class="vh-100 d-flex flex-column justify-content-center">
       <div class="p-5 text-left text-white">
         <div class="container py-6">
-          <h1 class="display-5 fw-bold text-white">Fernanda Cruz Hernández</h1>
-          <h2 class="text-white letra-color">Desarrolladora Frontend JR</h2>
+          <h1 id="app" class="display-5 fw-bold text-white">Fernanda Cruz Hernández</h1>
 
           <p class="col-lg-8 lead w-50 mt-3">
             Mi amor por la música y los atardeceres se refleja en mis diseños,
@@ -91,14 +90,13 @@
     </header>
 
     <main>
-      <section id="Habilidades">
+      <section id="habilidades">
         <div class="container px-4 py-5" id="hanging-icons">
           <h2 class="pb-2 border-bottom">Habilidades</h2>
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="col d-flex align-items-start">
               <div
-                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-              >
+                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 <i class="bi-file-code icono-gigante"></i>
               </div>
               <div>
@@ -112,8 +110,7 @@
             </div>
             <div class="col d-flex align-items-start">
               <div
-                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-              >
+                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 <i class="bi-people icono-gigante"></i>
               </div>
               <div>
@@ -144,7 +141,7 @@
         </div>
       </section>
 
-      <section id="Proyectos">
+      <section id="proyectos">
         <div class="album py-5 bg-body-tertiary">
           <div class="container">
             <h2 class="my-5 border-bottom pb-2">Proyectos</h2>
@@ -164,9 +161,9 @@
                   <main class="card-body">
                     <h5>Primera Página Web</h5>
                     <p class="card-text">
-                      Primera página realizada con HTML y CSS. 
-                      Concidero que es una página muy importante 
-                      para mi, porque con ella eh podido comparar mis avances.
+                      Primera página realizada con HTML y CSS. Concidero que es
+                      una página muy importante para mi, porque con ella eh
+                      podido comparar mis avances.
                     </p>
                     <div
                       class="d-flex justify-content-between align-items-center"
@@ -201,7 +198,10 @@
                   </figure>
                   <main class="card-body">
                     <h5>Pag de Display</h5>
-                    <p class="card-text">Página creada con el objetivo de aprender sobre los displays.</p>
+                    <p class="card-text">
+                      Página creada con el objetivo de aprender sobre los
+                      displays.
+                    </p>
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
@@ -236,8 +236,9 @@
                   <main class="card-body">
                     <h5>Mis Intereses</h5>
                     <p class="card-text">
-                      En esta pagina comparto algunos de mis intereses, un poco de información sobre mi y un 
-                      apartado sobre un tema que me resulta interesante, los gatos.
+                      En esta pagina comparto algunos de mis intereses, un poco
+                      de información sobre mi y un apartado sobre un tema que me
+                      resulta interesante, los gatos.
                     </p>
                     <div
                       class="d-flex justify-content-between align-items-center"
@@ -273,8 +274,9 @@
                   <main class="card-body">
                     <h5>Clon de Google</h5>
                     <p class="card-text">
-                      Desarrollé un clon de Google, para comprender algunos conceptos sobre las 
-                      etiquetas que nos ayudan a tener una mejor visibilidad de nuestro código.
+                      Desarrollé un clon de Google, para comprender algunos
+                      conceptos sobre las etiquetas que nos ayudan a tener una
+                      mejor visibilidad de nuestro código.
                     </p>
                     <div
                       class="d-flex justify-content-between align-items-center"
@@ -296,13 +298,13 @@
                   </main>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </section>
 
-      <section id="Testimonios">
+      <section id="testimonios" class="container">
+        <h2 class="my-5">Testimonios</h2>
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
           <div class="carousel-indicators">
             <button
@@ -329,27 +331,29 @@
 
           <!-- Sección editable del carrusel -->
           <div class="carousel-inner">
-
             <div class="carousel-item active" data-bs-interval="10000">
-              <div class="card mb-3 border-0" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="assets/Per1.jpeg"
-                      class="img-fluid rounded-circle"
-                      alt="Testimonio Persona 1"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Persona 1</h5>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Persona 1</small>
-                      </p>
-                      <p class="card-text">
-                        Programadora apasionada. Su entusiasmo es contagioso, y siempre está 
-                        dispuesta a aprender y explorar nuevas tecnologías.
-                      </p>
+              <div class="d-flex justify-content-center">
+                <div class="card mb-3 border-0" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="assets/Per1.jpeg"
+                        class="img-fluid rounded-circle"
+                        alt="Testimonio Persona 1"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Persona 1</h5>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Persona 1</small>
+                        </p>
+                        <p class="card-text">
+                          Programadora apasionada. Su entusiasmo es contagioso,
+                          y siempre está dispuesta a aprender y explorar nuevas
+                          tecnologías.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -357,25 +361,28 @@
             </div>
 
             <div class="carousel-item" data-bs-interval="2000">
-              <div class="card mb-3 border-0" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="assets/Per2.png"
-                      class="img-fluid rounded-circle"
-                      alt="Testimonio Persona 2"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Persona 2</h5>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Persona 2</small>
-                      </p>
-                      <p class="card-text">
-                        Siempre está dispuesto a colaborar y compartir sus conocimientos con los demás. 
-                        Su habilidad para trabajar en equipo es excepcional.
-                      </p>
+              <div class="d-flex justify-content-center">
+                <div class="card mb-3 border-0" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="assets/Per2.png"
+                        class="img-fluid rounded-circle"
+                        alt="Testimonio Persona 2"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Persona 2</h5>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Persona 2</small>
+                        </p>
+                        <p class="card-text">
+                          Siempre está dispuesto a colaborar y compartir sus
+                          conocimientos con los demás. Su habilidad para
+                          trabajar en equipo es excepcional.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -383,25 +390,27 @@
             </div>
 
             <div class="carousel-item">
-              <div class="card mb-3 border-0" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="assets/Per3.png"
-                      class="img-fluid rounded-circle"
-                      alt="Testimonio Persona 3"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Persona 3</h5>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Persona 3</small>
-                      </p>
-                      <p class="card-text">
-                        Malinali es una profesional comprometida con la
-                        tecnología, y adora a los patos.
-                      </p>
+              <div class="d-flex justify-content-center">
+                <div class="card mb-3 border-0" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="assets/Per3.png"
+                        class="img-fluid rounded-circle"
+                        alt="Testimonio Persona 3"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Persona 3</h5>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Persona 3</small>
+                        </p>
+                        <p class="card-text">
+                          Malinali es una profesional comprometida con la
+                          tecnología, y adora a los patos.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -409,26 +418,28 @@
             </div>
 
             <div class="carousel-item">
-              <div class="card mb-3 border-0" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="assets/Per4.png"
-                      class="img-fluid rounded-circle"
-                      alt="Testimonio Persona 4"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Persona 4</h5>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Persona 4</small>
-                      </p>
-                      <p class="card-text">
-                        Programadora que nunca deja un proyecto a medias. 
-                        Siempre cumple con los plazos de entrega y se asegura de que el 
-                        código esté bien probado antes de enviarlo.
-                      </p>
+              <div class="d-flex justify-content-center">
+                <div class="card mb-3 border-0" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="assets/Per4.png"
+                        class="img-fluid rounded-circle"
+                        alt="Testimonio Persona 4"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Persona 4</h5>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Persona 4</small>
+                        </p>
+                        <p class="card-text">
+                          Programadora que nunca deja un proyecto a medias.
+                          Siempre cumple con los plazos de entrega y se asegura
+                          de que el código esté bien probado antes de enviarlo.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -457,14 +468,64 @@
           </button>
         </div>
       </section>
+
+      <section id="contacto">
+        <div class="px-4 py-5 my-5 vh-75 text-center">
+          <i class="bi-calendar-week icono-gigante"></i>
+          <h1 class="display-5 fw-bold text-body-emphasis">Contactame</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world’s most popular front-end open source toolkit,
+              featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a href="https://github.com/Amari05fc" target="_blank" rel="noopener noreferrer">
+                <i class="bi-github icon-contacto"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi-instagram icon-contacto"></i>
+              </a>
+              <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
+                <i class="bi-linkedin icon-contacto"></i>
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="bi-envelope icon-contacto"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer id="Contacto"></footer>
+    <footer>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary" >© 2024 Technolochicas PRO, Fernanda Cruz</span >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end me-3 list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"> Imágenes de Freepik </a>
+          </li>
+        </ul>
+      </footer>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

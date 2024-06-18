@@ -19,3 +19,23 @@ header{
 .img-primPag{
     width: 100%;
 }
+
+.icon-contacto{
+    font-size: 2rem;
+    color: black;
+    margin: 4px 8px;
+
+}
+
+.bg-body-secondary {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+#contacto{
+    height: 80vh;
+    min-height: 80vh;
+}
+
+#Contacto{
+    background-color: rgba(19, 18, 18, 0.822);
+}
