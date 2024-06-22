@@ -1,8 +1,19 @@
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(35, 2, 43, 0.918)),
-            url("assets/fonfo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(35, 2, 43, 0.918)), url("assets/fonfo.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 100vh;
+}
+
+footer{    
+    height: 150px;
+    color: #ffffff;
+    background-color: black;
+}
+
+#contacto{
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(35, 2, 43, 0.918)), url("assets/fondoContacto.jpg");
 }
 
 .letra-color {
@@ -16,26 +27,32 @@ header{
     padding: 5px 10px;
 }   
 
-.img-primPag{
-    width: 100%;
-}
-
 .icon-contacto{
     font-size: 2rem;
-    color: black;
+    color: rgba(255, 255, 255, 0.959);
     margin: 4px 8px;
+}
 
+.icono-contacto{
+    font-size: 5rem;
+    color: rgba(255, 251, 251, 0.959);
+    margin: 4px 8px;
+}
+
+.lead {
+    color: antiquewhite;
+}
+
+.img-primPag{
+    width: 100%;
 }
 
 .bg-body-secondary {
     background-color: rgb(255, 255, 255) !important;
 }
 
-#contacto{
-    height: 80vh;
-    min-height: 80vh;
+.texto_contacto{
+    color: rgb(253, 253, 253);
 }
 
-#Contacto{
-    background-color: rgba(19, 18, 18, 0.822);
-}
+
